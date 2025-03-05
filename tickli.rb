@@ -10,7 +10,7 @@ class Tickli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "b0ce2a11cbde2fbde57a3edcd73e21b73209a0cbd4bf0d2e160b606c7e8ecead"
+      sha256 "6345b6c9a25382797f8a40cdc3a3853f734aaa7cc0e8b556289559f3bc7dc7d6"
 
       def install
         bin.install "tickli"
@@ -21,7 +21,7 @@ class Tickli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "bb622c9651635580f519ddbf3b3190ac1a3c694ac138fa44547cd7e85b257c12"
+      sha256 "774be91b99742c7c3c8dfb97aa167683c819b854fece716413340b78c6032fff"
 
       def install
         bin.install "tickli"
@@ -36,7 +36,7 @@ class Tickli < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_amd64.tar.gz"
-        sha256 "479f528da78a3342e9c3c381da52671c9aec2ac55f0df01af886dca011fd4ba0"
+        sha256 "3df92dcdc51cb5023215f99484172638185e35974d8d87fbcfdb38dc3e2a8210"
 
         def install
           bin.install "tickli"
@@ -49,7 +49,7 @@ class Tickli < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_arm64.tar.gz"
-        sha256 "aef752b69cfa498e92b5fb2108800408291d416664f9eadfebd4ef098d1777f2"
+        sha256 "430c696bea024e264bb3ae91a934583174a42f54bcbe2a24a671706caffc47aa"
 
         def install
           bin.install "tickli"
