@@ -9,8 +9,8 @@ class Tickli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sho0pi/tickli/releases/download/0.0.1/tickli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "b9c192566f5827ea97a0d809b893ee10a0c0236bbd422306826f34c022cb573e"
+      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_amd64.tar.gz"
+      sha256 "b0ce2a11cbde2fbde57a3edcd73e21b73209a0cbd4bf0d2e160b606c7e8ecead"
 
       def install
         bin.install "tickli"
@@ -20,8 +20,8 @@ class Tickli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sho0pi/tickli/releases/download/0.0.1/tickli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "2a68f3271ea65b31f904173c639be98522b68928fc6d9e55184ac05df95d238e"
+      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_arm64.tar.gz"
+      sha256 "bb622c9651635580f519ddbf3b3190ac1a3c694ac138fa44547cd7e85b257c12"
 
       def install
         bin.install "tickli"
@@ -35,8 +35,8 @@ class Tickli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/tickli/releases/download/0.0.1/tickli_0.0.1_linux_amd64.tar.gz"
-        sha256 "de1d3c178a10905f4ee023af3b3f64b33fc5d6b468a9f69405b38e16b39cfa5b"
+        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_amd64.tar.gz"
+        sha256 "479f528da78a3342e9c3c381da52671c9aec2ac55f0df01af886dca011fd4ba0"
 
         def install
           bin.install "tickli"
@@ -48,8 +48,8 @@ class Tickli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/tickli/releases/download/0.0.1/tickli_0.0.1_linux_arm64.tar.gz"
-        sha256 "f6f6526fdcea635c1be6342460b27d66841c82680b0182986c3cafe7492a27ef"
+        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_arm64.tar.gz"
+        sha256 "aef752b69cfa498e92b5fb2108800408291d416664f9eadfebd4ef098d1777f2"
 
         def install
           bin.install "tickli"
