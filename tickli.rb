@@ -5,12 +5,12 @@
 class Tickli < Formula
   desc "A simple CLI for managing your tasks."
   homepage "https://github.com/sho0pi/tickli"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "76fd64d9c97c08e3ec629b9681578430f3108d69292caa10ea150131fb6b32c5"
+      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.2/tickli_0.0.2_darwin_amd64.tar.gz"
+      sha256 "0dd46e2d196d37c980d5c623372613e6b680a20e8a5a2df4beda28b4f13e258d"
 
       def install
         bin.install "tickli"
@@ -20,8 +20,8 @@ class Tickli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "60b0ae070aa2cc7d877dab37240aecfd55b938b9b3825f0738ca3bd6f0ffa660"
+      url "https://github.com/Sho0pi/tickli/releases/download/v0.0.2/tickli_0.0.2_darwin_arm64.tar.gz"
+      sha256 "824cc5ac624dadbd2f0a52325776d01e9853845f1096b6057d66af861fe0f0de"
 
       def install
         bin.install "tickli"
@@ -35,8 +35,8 @@ class Tickli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_amd64.tar.gz"
-        sha256 "f9b716882ec757f7211fb6cc21c3dbdb305210fea8e8e387ac1f1d84c8c8bd80"
+        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.2/tickli_0.0.2_linux_amd64.tar.gz"
+        sha256 "a290d2f69ffb0b5ddf38d8ca3ecd19511faa3e229230f3a820d3dd6790d1d1ad"
 
         def install
           bin.install "tickli"
@@ -48,8 +48,8 @@ class Tickli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.1/tickli_0.0.1_linux_arm64.tar.gz"
-        sha256 "18fe08687bce590f92e9cbdbda94abdecb809632db45b5b8095fdd07186389f1"
+        url "https://github.com/Sho0pi/tickli/releases/download/v0.0.2/tickli_0.0.2_linux_arm64.tar.gz"
+        sha256 "e6d302ccea1d8f23f4b87ee4202af126e00b722fdc1c71ae03a73c1448400ffa"
 
         def install
           bin.install "tickli"
@@ -59,5 +59,9 @@ class Tickli < Formula
         end
       end
     end
+  end
+
+  test do
+    system "#{bin}/tickli version"
   end
 end
