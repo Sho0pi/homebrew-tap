@@ -5,12 +5,12 @@
 class Gocat < Formula
   desc "A simple CLI for managing your tasks."
   homepage "https://github.com/sho0pi/gocat"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sho0pi/gocat/releases/download/v0.1.0/gocat_0.1.0_darwin_amd64.tar.gz"
-      sha256 "abfb167c63cb0775fa7c39618b0b2e1c2f35602293d382c0d7cdd70fa32989b8"
+      url "https://github.com/Sho0pi/gocat/releases/download/v0.2.0/gocat_0.2.0_darwin_amd64.tar.gz"
+      sha256 "6497518c519ccfc683e9d95e6ac85980be674e56cc65e4368a42979f0ec3d27a"
 
       def install
         bin.install "gocat"
@@ -20,8 +20,8 @@ class Gocat < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sho0pi/gocat/releases/download/v0.1.0/gocat_0.1.0_darwin_arm64.tar.gz"
-      sha256 "487b67e2e12776d51bcd1b0a0027b955277fe6ffd11d74dd96c0b3454560f449"
+      url "https://github.com/Sho0pi/gocat/releases/download/v0.2.0/gocat_0.2.0_darwin_arm64.tar.gz"
+      sha256 "3000e69e6789c202e3f3ad393457b24cdc6121d09e5dbf4ae26ef4952628590d"
 
       def install
         bin.install "gocat"
@@ -35,8 +35,8 @@ class Gocat < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/gocat/releases/download/v0.1.0/gocat_0.1.0_linux_amd64.tar.gz"
-        sha256 "f87b4321f65b3082be2d412218240f5201e1042541f6a0497829f2a9674a50c5"
+        url "https://github.com/Sho0pi/gocat/releases/download/v0.2.0/gocat_0.2.0_linux_amd64.tar.gz"
+        sha256 "03c93ce68d7aafa34d02b525de1410fcd63d0ff4be64d92ab0fd8eb991b00edc"
 
         def install
           bin.install "gocat"
@@ -48,8 +48,8 @@ class Gocat < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Sho0pi/gocat/releases/download/v0.1.0/gocat_0.1.0_linux_arm64.tar.gz"
-        sha256 "82212b213f35ee12e179d1252f0993fb2c39601c2eb3e7ad088a4f2ef6d5af1b"
+        url "https://github.com/Sho0pi/gocat/releases/download/v0.2.0/gocat_0.2.0_linux_arm64.tar.gz"
+        sha256 "945f71e9005731f4aff8f2243978de6cf17dee3e98ed5ec058dccf18fca8f01c"
 
         def install
           bin.install "gocat"
